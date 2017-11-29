@@ -1,5 +1,5 @@
 {
-    "copyright": "Copyright 2016, EMC, Inc.",
+    "copyright": "Copyright 2017, EMC, Inc.",
     "definitions": {
         "BaseUrl": {
             "type": "string",

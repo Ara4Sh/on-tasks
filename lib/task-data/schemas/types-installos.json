@@ -264,6 +264,14 @@
             "description": "The DNS domain suffix for target OS",
             "type": "string"
         },
+        "Timezone": {
+            "description": "Timezone setting in $TZ format",
+            "type": "string"
+        },
+        "Ntp": {
+            "description": "NTP server address",
+            "type": "string"
+        },
         "Comport": {
             "type": "string",
             "description": "Specify a console device, such as 'com1', 'ttyS0'"
