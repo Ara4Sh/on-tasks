@@ -5,6 +5,11 @@
             "description": "The type of OS which is used by code internally",
             "enum": [ "esx", "linux", "windows" ]
         },
+        "OsName": {
+            "description": "The name of Linux OS based on LSB Distributor ID (debian, ubuntu)",
+            "type": "string",
+	    "minLength": 1
+        },
         "UserName": {
             "description": "The user account name",
             "type": "string",
@@ -319,6 +324,14 @@
             "type": "string",
             "description": "Extra (persistent) kernel boot parameters",
             "minLength": 1
+        },
+        "Timezone": {
+            "description": "The Timezone based on $TZ (Asia/Tehran)",
+            "type": "string"
+        },
+        "Ntp": {
+            "description": "The NTP server address",
+            "type": "string"
         }
     }
 }
