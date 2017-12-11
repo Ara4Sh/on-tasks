@@ -8,7 +8,7 @@
         "OsName": {
             "description": "The name of Linux OS based on LSB Distributor ID (debian, ubuntu)",
             "type": "string",
-	    "minLength": 1
+            "minLength": 1
         },
         "UserName": {
             "description": "The user account name",
@@ -326,7 +326,7 @@
             "minLength": 1
         },
         "Timezone": {
-            "description": "The Timezone based on $TZ (Asia/Tehran)",
+            "description": "The Timezone based on $TZ (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
             "type": "string"
         },
         "Ntp": {
