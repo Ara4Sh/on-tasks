@@ -7,8 +7,7 @@
         },
         "OsName": {
             "description": "The name of Linux OS based on LSB Distributor ID (debian, ubuntu)",
-            "type": "string",
-            "minLength": 1
+            "enum": [ "debian", "ubuntu" ]
         },
         "UserName": {
             "description": "The user account name",
@@ -327,11 +326,13 @@
         },
         "Timezone": {
             "description": "The Timezone based on $TZ (https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)",
-            "type": "string"
+            "type": "string",
+            "minLength": 1
         },
         "Ntp": {
             "description": "The NTP server address",
-            "type": "string"
+            "type": "string",
+	    "minLength": 1
         }
     }
 }
