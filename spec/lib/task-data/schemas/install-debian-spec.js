@@ -8,6 +8,7 @@ describe(require('path').basename(__filename), function() {
 
     var partialCanonical = {
         "baseUrl": "debian.baseUrl",
+        "osName": "debian"	
     };
 
     var positiveSetParam = {
