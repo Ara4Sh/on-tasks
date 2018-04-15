@@ -76,7 +76,7 @@ describe(require('path').basename(__filename), function() {
         it('should handle the case of lacking dell configuration.', function() {
             wsmanBaseJob.prototype.checkOBM.resolves(obm);
             configuration.get.withArgs('dell').returns(undefined);
-            expect(wsmanInventoryJob._initJob()).to.be.rejectedWith('Dell Inventory web service is not defined in wsmanConfig.json.');
+            expect(wsmanInventoryJob._initJob()).to.be.rejectedWith('Dell Inventory web service is not defined in smiConfig.json.');
         });
 
         it('should handle the case of incorrect obm setting that ip address is undefined.', function() {
@@ -100,7 +100,7 @@ describe(require('path').basename(__filename), function() {
             configuration.get.withArgs('dell').returns(dellConfigs);
             wsmanBaseJob.prototype.getIpAddress.resolves('172.31.128.73');
             return wsmanInventoryJob._initJob().then(function() {
-                expect(wsmanInventoryJob.inventories.length).to.equal(4);
+                expect(wsmanInventoryJob.inventories.length).to.equal(5);
                 expect(wsmanInventoryJob.inventories[0]).to.equal('hardware');
             });
         });

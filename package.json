@@ -1,7 +1,7 @@
 {
   "//": "Copyright 2017, Dell EMC, Inc.",
   "name": "on-tasks",
-  "version": "2.37.0",
+  "version": "2.53.0",
   "description": "Tasks repository (meant as a library of tasks) to be loaded and run by task graphs as needed.",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
     "xml2js": "^0.4.4",
     "temp": "~0.8.3",
     "request": "^2.81.0",
+    "requestretry": "1.13.0",
     "request-promise": "^4.2.1",
     "node-uuid": "^1.4.2",
     "smb2": "0.2.7",
@@ -48,7 +49,7 @@
     "istanbul": "^0.3.5",
     "jsdoc": "^3.3.0-alpha13",
     "jshint": "^2.5.11",
-    "json-schema-faker": "^0.3.6",
+    "json-schema-faker": "^0.4.7",
     "jsonlint": "^1.6.2",
     "lodash.unset": "^4.4.0",
     "mocha": "^4.0.1",
