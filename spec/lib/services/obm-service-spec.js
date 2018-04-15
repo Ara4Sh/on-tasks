@@ -69,6 +69,13 @@ describe('OBM Service', function() {
             return obmService.retryObmCommand('setBootPxe').should.become(undefined);
         });
 
+        it('should not fail on a config error when the command is setBootPxeEFI', function() {
+            var error = new Error('test config error');
+            error.name = 'ObmConfigurationError';
+            obmService.runObmCommand.rejects(error);
+            return obmService.retryObmCommand('setBootPxeEFI').should.become(undefined);
+        });
+
         it('should retry an OBM command if expected output does not match', function(done) {
             obmService.runObmCommand.resolves('testoutput');
 

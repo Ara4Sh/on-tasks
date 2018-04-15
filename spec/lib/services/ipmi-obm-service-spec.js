@@ -26,6 +26,7 @@ describe('IpmiObmService', function() {
         // against these extra, ipmi-specific methods
         base.runInterfaceTestCases([
             'setBootPxe',
+            'setBootPxeEFI',
             'soft',
             'reset',
             'identifyOn',
